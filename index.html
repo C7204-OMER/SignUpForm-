@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,300" rel="stylesheet" type="text/css">
+    <title>SignUpForm</title>
+</head>
+<body>
+    <form action="result.htnl" method="GET"></form>
+    <div id="container">
+            <h1 id="h1">Sign Up</h1>
+        <div id="info">
+            <fieldset class="fieldset">
+                <legend>Your Basic Info</legend>
+                <label>Name:</label><br>
+                <input type="text" name="username" id="name" class="input" required><br>
+                <label>Email:<br></label>
+                <input type="Email" name="userEmail" id="Email" class="input" required><br>
+                <label>Password:</label><br>
+                <input type="password" name="userpassword" id="password" class="input" required><br>
+                <label>Age:</label><br>
+                <input type="radio" name="options" id="options" value="options">
+                <label for="options-1">Under 13</label><br>
+                <input type="radio" name="options" id="options" value="options">
+                <label for="options-2">Over 13</label><br>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend>Your Profile</legend>
+                <label>Bio:</label><br>
+                <textarea name="bio" id="bio" class="input"></textarea><br>
+                <label>Job Role:</label><br>
+                <select name="options" id="options" class="input">
+                    <optgroup label="Web">
+                        <option value="frontend_developer">Front-End Developer</option>
+                        <option value="js_developer">Js Developer</option>
+                        <option value="pyhton_developer">Pyhton Developer</option>
+                        <option value="django_developer">Django Developer</option>
+                        <option value="web_designer">Web Designer</option>
+                        <option value="wordpress_developer">Wordpress Developer</option>
+                    </optgroup>
+                    <optgroup label="Mobil">
+                        <option value="IOS_developer">IOS Developer</option>
+                        <option value="android_developer">Android Developer</option>
+                    </optgroup>
+                    <optgroup label="Business">
+                        <option value="business_owner">Business Owner</option>
+                        <option value="Freelancer">Freelancer</option>
+                    </optgroup>
+                </select>
+                <label >İnterests:</label>
+                <br>
+                <input type="checkbox" name="interest" value="Development" id="1-int">
+                <label for="1-int">Development</label><br>
+                <input type="checkbox" name="interest" value="Design" id="2-int">
+                <label for="2-int">Design</label><br>
+                <input type="checkbox" name="interest" value="Business" id="3-int">
+                <label for="3-int">Business</label>
+            </fieldset>
+        </div>
+        <div>
+            <input type="submit" id="submit" value="Sign Up">
+        </div>
+    </div>
+    </form>
+</body>
+</html>
